@@ -1,5 +1,8 @@
 package ru.geekbrains.java3_work6_Reflection_Annotation;
 
+import ru.geekbrains.java3_work6_Reflection_Annotation.Annotation.BeforeSuite;
+import ru.geekbrains.java3_work6_Reflection_Annotation.Annotation.Test;
+
 public class Dog {
     private String voice;
     private String name;
@@ -20,11 +23,13 @@ public class Dog {
         return name;
     }
 
-    private void voice(){
+    @BeforeSuite
+    public void voice(){
         System.out.println(voice);
     }
+    @Test
     public void run(){
-        System.out.println("Собака " + name + " побежада.");
+        System.out.println("Собака " + name + " побежала.");
     }
 
 }
