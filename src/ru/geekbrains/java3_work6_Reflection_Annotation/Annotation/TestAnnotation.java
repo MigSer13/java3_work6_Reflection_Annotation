@@ -56,7 +56,6 @@ public class TestAnnotation {
             } catch (InvocationTargetException e) {
                 e.printStackTrace();
             }
-            //System.out.println(s.substring(indexBegin));
         }
 
 
